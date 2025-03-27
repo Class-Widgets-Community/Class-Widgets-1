@@ -29,7 +29,7 @@
     "smooth_volume": 0
   },
   "Weather": {
-    "city": 101010100,
+    "city": 0,
     "api": "xiaomi_weather",
     "api_key": ""
   },

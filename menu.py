@@ -1084,7 +1084,7 @@ class SettingsMenu(FluentWindow):
         if search_city_dialog.exec():
             selected_city = search_city_dialog.city_list.selectedItems()
             if selected_city:
-                config_center.write_conf('Weather', 'city', wd.search_code_by_name(selected_city[0].text()))
+                config_center.write_conf('Weather', 'city', wd.search_code_by_name((selected_city[0].text(),'')))
 
     def show_license(self):
         license_dialog = licenseDialog(self)
