@@ -1,40 +1,31 @@
 [changelog]
 body = """
+## 🌙 Class Widgets Nightly{% if version %} ({{ version }}){% endif %}
 
-## Class Widgets Nightly Build{% if version %} ({{ version }}){%- endif -%}
 {% if version %}
 **构建时间**: {{ now() | date(format="%Y-%m-%d %H:%M:%S UTC") }}
 {% endif %}
 
 {% for group, commits in commits | group_by(attribute="group") %}
-### {{ group | upper_first }}
-{% for commit in commits | unique(attribute="message") %}
-- {% if commit.scope %}{{ commit.scope }}: {%- endif -%}{{ commit.message | upper_first }}
-  {% if commit.remote.username %}by @{{ commit.remote.username }}{%- endif -%}
-  {% if commit.remote.pr_number %} in [#{{ commit.remote.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.remote.pr_number }}){%- endif %}
+### {{ group }}
+{% for commit in commits | unique(attribute="message") -%}
+- {% if commit.scope %}**{{ commit.scope }}**: {% endif -%}{{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`){% if commit.remote.username %} by @{{ commit.remote.username }}{% endif %}{% if commit.remote.pr_number %} in [#{{ commit.remote.pr_number }}]({{ self::remote_url() }}/pull/{{ commit.remote.pr_number }}){% endif %}
 {% endfor %}
-{%- endfor -%}
+{% endfor %}
 
-{%- if github -%}
-{% if github.contributors | filter(attribute="is_first_time", value=true) | length != 0 %}
-{% raw %}\n{% endraw -%}
+{% if github and github.contributors | filter(attribute="is_first_time", value=true) | length != 0 %}
 ## 🎉 新贡献者
-{%- endif %}\
-{% for contributor in github.contributors | filter(attribute="is_first_time", value=true) %}
-* @{{ contributor.username }} {%- if contributor.pr_number %} 在 [#{{ contributor.pr_number }}]({{ self::remote_url() }}/pull/{{ contributor.pr_number }}) {%- endif %} 第一次贡献
-{%- endfor -%}
-{%- endif -%}
+{% for c in github.contributors | filter(attribute="is_first_time", value=true) %}
+- @{{ c.username }}{% if c.pr_number %} 在 [#{{ c.pr_number }}]({{ self::remote_url() }}/pull/{{ c.pr_number }}){% endif %} 第一次贡献 ✨
+{% endfor %}
+{% endif %}
 
 ---
-
+> [!WARNING]
 > ⚠️ **注意**: 这是一个 Nightly 快照版本, 可能包含未完全测试的功能。
 
-{% if version %}
-{% if previous.version %}
+{% if version and previous.version %}
 **完整变更日志**: {{ self::remote_url() }}/compare/{{ previous.version }}...{{ version }}
-{% endif %}
-{% else -%}
-{% raw %}\n{% endraw %}
 {% endif %}
 
 {%- macro remote_url() -%}
@@ -48,15 +39,11 @@ trim = true
 [git]
 commit_parsers = [
   {group = "⏪ 回滚", message = "^revert"},
-  {group = "♻️ 重构", message = "^refactor"},
   {group = "⚡ 性能优化", message = "^perf"},
   {group = "✨ 新功能", message = "^feat"},
   {group = "🐛 Bug 修复", message = "^fix"},
-  {group = "👷 CI/CD", message = "^ci"},
   {group = "💄 样式调整", message = "^style"},
-  {group = "📚 文档更新", message = "^docs"},
-  {group = "📦 构建", message = "^build"},
-  {group = "🔧 杂项", message = "^chore"}
+  {group = "📚 文档更新", message = "^docs"}
 ]
 conventional_commits = true
 filter_commits = true

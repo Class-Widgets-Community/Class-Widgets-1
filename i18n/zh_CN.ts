@@ -1850,13 +1850,9 @@
 <context>
     <name>PluginPlaza</name>
     <message>
-        <source>{month}月{day}日 {weekday}</source>
-        <translation type="vanished">{month} 月 {day} 日 {weekday}</translation>
-    </message>
-    <message>
         <location filename="../plugin_plaza.py" line="627"/>
-        <source>{month}{day}日 {weekday}</source>
-        <translation type="unfinished"></translation>
+        <source>{month}月{day}日 {weekday}</source>
+        <translation>{month} {day} 日 {weekday}</translation>
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="749"/>
@@ -3066,7 +3062,7 @@
     <message>
         <location filename="../menu.py" line="5356"/>
         <source>未添加-{data}</source>
-        <translation>未添加 - {data}</translation>
+        <translation>未添加-{data}</translation>
     </message>
     <message>
         <location filename="../menu.py" line="5464"/>
@@ -3662,47 +3658,47 @@
 <context>
     <name>config</name>
     <message>
-        <location filename="../file.py" line="288"/>
+        <location filename="../file.py" line="287"/>
         <source>{section}.{key}</source>
         <translation>{section}.{key}</translation>
     </message>
     <message>
-        <location filename="../file.py" line="483"/>
+        <location filename="../file.py" line="482"/>
         <source>General.schedule</source>
         <translation>新课表 - 1.json</translation>
     </message>
     <message>
-        <location filename="../file.py" line="484"/>
+        <location filename="../file.py" line="483"/>
         <source>TTS.language</source>
         <translation>zh-CN</translation>
     </message>
     <message>
-        <location filename="../file.py" line="485"/>
+        <location filename="../file.py" line="484"/>
         <source>TTS.attend_class</source>
         <translation>活动开始, {lesson_name}</translation>
     </message>
     <message>
-        <location filename="../file.py" line="486"/>
+        <location filename="../file.py" line="485"/>
         <source>TTS.finish_class</source>
         <translation>活动结束, 下一节课 {lesson_name}</translation>
     </message>
     <message>
-        <location filename="../file.py" line="487"/>
+        <location filename="../file.py" line="486"/>
         <source>TTS.prepare_class</source>
         <translation>活动即将开始, 下一节课 {lesson_name}</translation>
     </message>
     <message>
-        <location filename="../file.py" line="488"/>
+        <location filename="../file.py" line="487"/>
         <source>TTS.after_school</source>
         <translation>活动全部结束</translation>
     </message>
     <message>
-        <location filename="../file.py" line="489"/>
+        <location filename="../file.py" line="488"/>
         <source>Weather.api</source>
         <translation>xiaomi_weather</translation>
     </message>
     <message>
-        <location filename="../file.py" line="490"/>
+        <location filename="../file.py" line="489"/>
         <source>Plugin.mirror</source>
         <translation>gh_proxy</translation>
     </message>
@@ -3723,7 +3719,7 @@
         <translation>Class Widgets 启动失败 w(ﾟДﾟ)w</translation>
     </message>
     <message>
-        <location filename="../file.py" line="50"/>
+        <location filename="../file.py" line="49"/>
         <source>加载默认配置文件失败,请检查文件完整性或尝试重新安装。
 错误信息: {e}</source>
         <translation>加载默认配置文件失败，请检查文件完整性或尝试重新安装。

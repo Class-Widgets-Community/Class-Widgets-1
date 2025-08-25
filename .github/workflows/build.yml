@@ -190,7 +190,7 @@ jobs:
             arch: x64
             platform: linux-x64
     env:
-      PYTHON_VERSION: ${{ (startsWith(matrix.os, 'macos') || matrix.platform == 'linux-x64') && '3.12' || '3.8' }}
+      PYTHON_VERSION: ${{ startsWith(matrix.os, 'windows') && '3.8' || '3.11' }}
       BUILD_TYPE: ${{ needs.prepare.outputs.build_type }}
       BUILD_TIME: ${{ needs.prepare.outputs.build_time }}
       BUILD_COMMIT: ${{ needs.prepare.outputs.build_commit }}
@@ -349,16 +349,16 @@ jobs:
           uv run pyinstaller main.py \
             -w \
             -i ./img/favicon.ico \
-            -n ClassWidgets \
+            -n "ClassWidgets" \
             --contents-directory . \
-            --add-data config:config \
-            --add-data audio:audio \
-            --add-data img:img \
-            --add-data ui:ui \
-            --add-data font:font \
-            --add-data view:view \
-            --add-data LICENSE:. \
+            --add-data "data:data" \
+            --add-data "audio:audio" \
+            --add-data "img:img" \
+            --add-data "ui:ui" \
+            --add-data "font:font" \
+            --add-data "view:view" \
             --add-data "i18n/*.qm:i18n" \
+            --add-data "LICENSE:." \
             --hidden-import darkdetect
           if [[ "$BUILD_TYPE" == "Release" ]]; then
             zip_name="ClassWidgets-Windows-${{ matrix.arch }}"
@@ -377,7 +377,7 @@ jobs:
             -i ./img/favicon.icns \
             -n "Class Widgets" \
             --contents-directory . \
-            --add-data "config:config" \
+            --add-data "data:data" \
             --add-data "audio:audio" \
             --add-data "img:img" \
             --add-data "ui:ui" \
@@ -403,16 +403,16 @@ jobs:
           uv run pyinstaller main.py \
             -w \
             -i ./img/favicon.png \
-            -n ClassWidgets \
+            -n "ClassWidgets" \
             --contents-directory . \
-            --add-data config:config \
-            --add-data audio:audio \
-            --add-data img:img \
-            --add-data ui:ui \
-            --add-data font:font \
-            --add-data view:view \
-            --add-data LICENSE:. \
+            --add-data "data:data" \
+            --add-data "audio:audio" \
+            --add-data "img:img" \
+            --add-data "ui:ui" \
+            --add-data "font:font" \
+            --add-data "view:view" \
             --add-data "i18n/*.qm:i18n" \
+            --add-data "LICENSE:." \
             --hidden-import darkdetect
 
           if [[ "$BUILD_TYPE" == "Release" ]]; then

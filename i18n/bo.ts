@@ -1814,7 +1814,7 @@
     <name>PluginPlaza</name>
     <message>
         <location filename="../plugin_plaza.py" line="627"/>
-        <source>{month}{day}日 {weekday}</source>
+        <source>{month}月{day}日 {weekday}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3576,47 +3576,47 @@
 <context>
     <name>config</name>
     <message>
-        <location filename="../file.py" line="288"/>
+        <location filename="../file.py" line="287"/>
         <source>{section}.{key}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="483"/>
+        <location filename="../file.py" line="482"/>
         <source>General.schedule</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="484"/>
+        <location filename="../file.py" line="483"/>
         <source>TTS.language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="485"/>
+        <location filename="../file.py" line="484"/>
         <source>TTS.attend_class</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="486"/>
+        <location filename="../file.py" line="485"/>
         <source>TTS.finish_class</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="487"/>
+        <location filename="../file.py" line="486"/>
         <source>TTS.prepare_class</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="488"/>
+        <location filename="../file.py" line="487"/>
         <source>TTS.after_school</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="489"/>
+        <location filename="../file.py" line="488"/>
         <source>Weather.api</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="490"/>
+        <location filename="../file.py" line="489"/>
         <source>Plugin.mirror</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3637,7 +3637,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file.py" line="50"/>
+        <location filename="../file.py" line="49"/>
         <source>加载默认配置文件失败,请检查文件完整性或尝试重新安装。
 错误信息: {e}</source>
         <translation type="unfinished"></translation>

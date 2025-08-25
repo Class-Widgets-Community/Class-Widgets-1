@@ -41,9 +41,9 @@ jobs:
       - name: Generate a changelog
         run: |
           if [[ "${{ inputs.build_type }}" == "Nightly" ]]; then
-            git cliff --config .github/cliff.nightly.toml --output CHANGELOG.md
+            git cliff --config .github/cliff.nightly.toml --latest --output CHANGELOG.md
           else
-            git cliff --config .github/cliff.toml --output CHANGELOG.md
+            git cliff --config .github/cliff.toml --latest --output CHANGELOG.md
           fi
 
       - name: Prepare release directory

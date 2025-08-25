@@ -46,15 +46,14 @@ class ConfigCenter:
             app = QApplication.instance() or QApplication(sys.argv)
             dlg = Dialog(
                 QCoreApplication.translate("file", 'Class Widgets 启动失败w(ﾟДﾟ)w'),
-                QCoreApplication.translate("file", '加载默认配置文件失败,请检查文件完整性或尝试重新安装。\n错误信息: {e}')
+                QCoreApplication.translate("file", '加载默认配置文件失败,请检查文件完整性或尝试重新安装。\n错误信息: {e}').format(e=e)
             )
             dlg.yesButton.setText(QCoreApplication.translate("file", '好'))
             dlg.cancelButton.hide()
             dlg.buttonLayout.insertStretch(0, 1)
             dlg.setFixedWidth(550)
             dlg.exec()
-            import utils
-            utils.stop(0)
+            os._exit(1)
 
     def _load_user_config(self) -> None:
         """加载用户配置文件"""
