@@ -27,22 +27,24 @@
 <div align="center">
 
 [![星标](https://img.shields.io/github/stars/Class-Widgets-Community/Class-Widgets-1-Community-Edition?style=for-the-badge&color=orange&label=%E6%98%9F%E6%A0%87)](https://github.com/Class-Widgets/Class-Widgets)
+<!--
 [![当前版本](https://img.shields.io/github/v/release/Class-Widgets-Community/Class-Widgets-1-Community-Edition?style=for-the-badge&color=purple&label=%E5%BD%93%E5%89%8D%E7%89%88%E6%9C%AC)](https://github.com/Class-Widgets/Class-Widgets/releases/latest)
 [![当前测试版](https://img.shields.io/github/v/tag/Class-Widgets-Community/Class-Widgets-1-Community-Edition?include_prereleases&label=%E5%BD%93%E5%89%8D%E6%B5%8B%E8%AF%95%E7%89%88&color=yellow&style=for-the-badge)](https://github.com/Class-Widgets/Class-Widgets/actions)
+-->
 [![开源许可](https://img.shields.io/badge/license-GPLv3-blue.svg?label=%E5%BC%80%E6%BA%90%E8%AE%B8%E5%8F%AF%E8%AF%81&style=for-the-badge)](https://github.com/Class-Widgets/Class-Widgets?tab=GPL-3.0-1-ov-file)
-[![下载量](https://img.shields.io/github/downloads/Class-Widgets-Community/Class-Widgets-1-Community-Edition/total.svg?label=%E4%B8%8B%E8%BD%BD%E9%87%8F&color=green&style=for-the-badge)](https://github.com/Class-Widgets/Class-Widgets)
 <!--
+[![下载量](https://img.shields.io/github/downloads/Class-Widgets-Community/Class-Widgets-1-Community-Edition/total.svg?label=%E4%B8%8B%E8%BD%BD%E9%87%8F&color=green&style=for-the-badge)](https://github.com/Class-Widgets/Class-Widgets)
 [![翻译状态](https://hosted.weblate.org/widget/class-widgets-1/view/svg-badge.svg)](https://hosted.weblate.org/engage/class-widgets-1/)
 [![翻译状态](https://hosted.weblate.org/widget/class-widgets-1/view/language-badge.svg)](https://hosted.weblate.org/engage/class-widgets-1/)
--->
 
 ![Banner](img/Banner.png)
+-->
 
 [![Q群](https://img.shields.io/badge/QQ%20%E7%BE%A4-659521627-blue.svg?logo=qq&color=blue&style=for-the-badge)](https://qm.qq.com/cgi-bin/qm/qr?k=leZfEvwmQEMGJa7LPLFqT5YHgIkajCJD&authKey=TPhyEltQBtd+U9DvnMtsXNJUHJKvEzKXsTouTOxzdpwroBa4mltsLFFeeUnpAcay)
 
-
+<!--
 #### [了解更多 >](https://www.bilibili.com/video/BV1xwW9eyEGu/)
-
+-->
 </div>
 
 ## 特性
