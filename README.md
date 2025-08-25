@@ -166,4 +166,3 @@ Copyright © 2025 Class Widgets Community.
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Class-Widgets-Community/Class-Widgets-1-Community-Edition&type=Date" />
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Class-Widgets-Community/Class-Widgets-1-Community-Edition&type=Date" />
  </picture>
-
