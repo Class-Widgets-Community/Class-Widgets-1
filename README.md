@@ -17,7 +17,8 @@
   <img width="16%" align="center" src="img/Logo.png" alt="logo">
 </p>
   <h1 align="center">
-  Class Widgets
+  Class Widgets 1\
+  Community Edition
 </h1>
 <p align="center">
  全新桌面课表
