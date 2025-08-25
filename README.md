@@ -31,7 +31,7 @@
 
 ![Banner](img/Banner.png)
 
-[![Q群](https://img.shields.io/badge/QQ%20%E7%BE%A41-169200380-blue.svg?logo=qq&color=blue&style=for-the-badge)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=yHXKCAjOxlpTpJ4mNdXm0mxOneYUinRs&authKey=sd3%2F06iGdOZUjkXXPBeIzGnFDIeYwmdwuM8dhk25fi%2B1CUL32MkeN2EEfjdo2pzE&noverify=0&group_code=169200380)
+[![Q群](https://img.shields.io/badge/QQ%20%E7%BE%A4-659521627-blue.svg?logo=qq&color=blue&style=for-the-badge)](https://qm.qq.com/cgi-bin/qm/qr?k=leZfEvwmQEMGJa7LPLFqT5YHgIkajCJD&authKey=TPhyEltQBtd+U9DvnMtsXNJUHJKvEzKXsTouTOxzdpwroBa4mltsLFFeeUnpAcay)
 
 
 #### [了解更多 >](https://www.bilibili.com/video/BV1xwW9eyEGu/)
