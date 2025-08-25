@@ -17,7 +17,7 @@
   <img width="16%" align="center" src="img/Logo.png" alt="logo">
 </p>
   <h1 align="center">
-  Class Widgets 1\
+  Class Widgets 1
   Community Edition
 </h1>
 <p align="center">
